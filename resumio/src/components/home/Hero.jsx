@@ -46,7 +46,7 @@ const Hero = () => {
             </nav>
 
             {/* Mobile Menu */}
-            <div className={`fixed inset-0 z-[100] bg-black/40 text-black backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}`} >
+            <div className={`fixed inset-0 z-100 bg-black/40 text-black backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}`} >
                 <a href="#" className="text-white">Home</a>
                 <a href="#features" className="text-white">Features</a>
                 <a href="#testimonials" className="text-white">Testimonials</a>
@@ -61,8 +61,8 @@ const Hero = () => {
                 <div className="absolute top-28 xl:top-10 -z-10 left-1/4 size-72 sm:size-96 xl:size-120 2xl:size-132 bg-red-300 blur-[100px] opacity-30"></div>
 
                 {/* Headline + CTA */}
-                <h1 className="text-5xl md:text-6xl font-semibold max-w-5xl text-center mt-4 md:leading-[70px]">
-                    Land your dream job with <span className=" bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent text-nowrap">AI-powered </span> resumes.
+                <h1 className="text-5xl md:text-6xl font-semibold max-w-5xl text-center mt-4 md:leading-17.5">
+                    Land your dream job with <span className=" bg-linear-to-r from-red-700 to-red-600 bg-clip-text text-transparent text-nowrap">AI-powered </span> resumes.
                 </h1>
 
                 <p className="max-w-md text-center text-base my-7">Create, edit and download professional resumes with AI-powered assistance.</p>
