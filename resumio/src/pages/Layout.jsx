@@ -1,10 +1,13 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import Dashboard from './Dashboard'
 
 const Layout = () => {
   return (
     <div>
-        <h1>Layout</h1>
-        <div>
+        <div className='min-h-screen bg-gray-100'>
+            <Navbar/>
             <Outlet />
         </div>
     </div>
