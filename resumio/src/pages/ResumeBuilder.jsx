@@ -10,6 +10,7 @@ import ProfessionalSummaryForm from '../components/ProfessionalSummaryForm';
 import ExperienceForm from '../components/ExperienceForm';
 import EducationForm from '../components/EducationForm';
 import ProjectForm from '../components/ProjectForm';
+import SkillForm from '../components/SkillForm';
 
 const ResumeBuilder = () => {
 
@@ -113,8 +114,10 @@ const ResumeBuilder = () => {
                             {activeSection.id === 'projects' && (
                                 <ProjectForm data={resumeData.project} onChange={(data)=> setResumeData(prev=>({...prev, project: data}))}/>
                             )}
+                            {activeSection.id === 'skills' && (
+                                <SkillForm data={resumeData.skills || []} onChange={(data)=> setResumeData(prev=>({...prev, skills: data}))}/>
+                            )}
                         </div>
-
                     </div>
 
                 </div>
