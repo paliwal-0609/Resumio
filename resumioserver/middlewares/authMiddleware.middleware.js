@@ -1,5 +1,9 @@
 import jwt from 'jsonwebtoken';
 
+
+/** Middleware for getting userId
+ * - use in routes by name = protect
+*/
 const protect = async (req, res, next) => {
     const decoded;
     const token = req.headers.authorization;
