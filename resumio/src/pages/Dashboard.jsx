@@ -71,7 +71,7 @@ const Dashboard = () => {
                 </button>
             </div>
 
-            <hr className='border-slate-300 my-6 sm:w-[305px]'/>
+            <hr className='border-slate-300 my-6 sm:w-76.25'/>
 
             <div className='grid grid-cols-2 sm:flex flex-wrap gap-4'>
                 {allResumes.map((resume, idx)=>{
