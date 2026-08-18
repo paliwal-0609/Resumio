@@ -28,9 +28,9 @@ const ResumeSchema = new mongoose.Schema({
     skills:[{type:String}],
     personal_info: {
         image:{ type: String, default: '' },
-        full_name: { type: String, default: '', required: true},
+        full_name: { type: String, default: ''},
         profession: { type:String, default: '' },
-        email:{ type: String, default: '', required: true},
+        email:{ type: String, default: ''},
         phone:{ type: String, default: '' },
         location:{ type: String, default: '' },
         linkedin: { type: String, default: '' },
