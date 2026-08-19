@@ -106,11 +106,16 @@ export const getPublicResumeById = async(req, res) =>{
 */
 export const updateResume = async(req, res) =>{
     try {
-        const {userId} = req.userId;
+        const userId = req.userId;
         const {resumeId, resumeData, removeBackground} = req.body;
         const image = req.file;
 
-        let resumeDataCopy = JSON.parse(JSON.stringify(resumeData));
+        let resumeDataCopy;
+        if(typeof resumeData === 'string'){
+            resumeDataCopy = JSON.parse(resumeData)
+        }else{
+            resumeDataCopy = structuredClone(resumeData)
+        }
 
         if(image){
             const imageBufferData = fs.createReadStream(image.path)

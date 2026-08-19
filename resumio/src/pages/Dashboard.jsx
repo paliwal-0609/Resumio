@@ -99,7 +99,7 @@ const Dashboard = () => {
             const confirm = window.confirm('Are you sure you want to delete this resume?');
 
             if(confirm){
-                const {data} = await api.delete(`/api/resumes/delete/${resumeId}`, {title}, {headers: {
+                const {data} = await api.delete(`/api/resumes/delete/${resumeId}`, {headers: {
                     Authorization: token
                 }});
 
@@ -209,7 +209,7 @@ const Dashboard = () => {
 
                             <input type="file" id='resume-input' accept='.pdf' hidden onChange={(e)=> setResume(e.target.files[0])}/>
                         </div>
-                        <button className='w-full py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors'>
+                        <button disabled={isLoading} className='w-full py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors flex items-center justify-center gap-2'>
 
                             {isLoading && <LoaderCircleIcon className='animate-spin size-4 text-white'/>}
 
