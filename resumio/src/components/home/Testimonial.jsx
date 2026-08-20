@@ -6,24 +6,28 @@ const Testimonial = () => {
 
     const cardsData = [
         {
-            image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200',
-            name: 'Briar Martin',
-            handle: '@neilstellar',
+            image: 'https://media.licdn.com/dms/image/v2/D5635AQG_O68WN_BuTQ/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1724765682808?e=1787839200&v=beta&t=DiVi1CyFyj-mRL8xYg_0W_jAlXGXnFhDu84Dz_MFgmg',
+            name: 'Nitin Yadav',
+            handle: '@nitin.yadav.2.1',
+            review: "I absolutely love this site. It has made a huge difference in my and so many of my friends' career paths. Super easy to edit and customize."
         },
         {
-            image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200',
-            name: 'Avery Johnson',
-            handle: '@averywrites',
+            image: 'https://media.licdn.com/dms/image/v2/D4D03AQHZagZjEAcgmg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683561144961?e=1788998400&v=beta&t=3NeDN_Wx6k5ASG1rNNleTjmGhcFBzLIC2JDRq3zlHNM',
+            name: 'Harsh Vajpayee',
+            handle: '@its.harshvajpayee',
+            review: "Great option totally free of cost and without watermarks even for the basic service. Easy format, looks clean and clear. I love that AI enhancer."
         },
         {
-            image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&auto=format&fit=crop&q=60',
-            name: 'Jordan Lee',
-            handle: '@jordantalks',
+            image: 'https://ik.imagekit.io/jtbnczgsm/user-resumes/1000069137.jpg',
+            name: 'Sagar Paliwal',
+            handle: '@sagar.bys',
+            review: "Have used it for a couple of resumes now. It's super neat and simple. I love the customization options, and overall, just works smoothly."
         },
         {
-            image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&auto=format&fit=crop&q=60',
-            name: 'Avery Johnson',
-            handle: '@averywrites',
+            image: 'https://media.licdn.com/dms/image/v2/D5603AQFWPL_8Fxs0Yw/profile-displayphoto-crop_800_800/B56Z1dhBMEKkAI-/0/1775390431559?e=1788998400&v=beta&t=_Hr6FD424gqZzFJ3IEEb4RpkCoADRM8Mhm-RRrrxa4w',
+            name: 'Soham Singh',
+            handle: '@shm_here',
+            review: "Couldn't be happier with this website. It had all the features you could possibly need and is an excellent CV website for anyone applying to jobs or the like."
         },
     ];
 
@@ -41,7 +45,7 @@ const Testimonial = () => {
                     <span className="text-xs text-slate-500">{card.handle}</span>
                 </div>
             </div>
-            <p className="text-sm py-4 text-gray-800">Radiant made undercutting all of our competitors an absolute breeze.</p>
+            <p className="text-sm py-4 text-gray-800">{card.review}</p>
         </div>
     );
 
