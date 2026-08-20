@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="min-h-screen">
             {/* Navbar */}
             <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-40 text-sm">
-                <a href="https://prebuiltui.com">
+                <a href="/">
                     <img src='/logo.svg' alt='logo' className='h-10 w-auto'/>
                 </a>
 
@@ -33,13 +33,13 @@ const Hero = () => {
                 </div>
 
                 <div className="flex gap-2">
-                    <Link to='/app?state=register' className="hidden md:block px-6 py-2 bg-red-700 hover:bg-red-500 active:scale-95 transition-all rounded-full text-white" hidden={user}>
+                    <Link to='/dashboard?state=register' className="hidden md:block px-6 py-2 bg-red-700 hover:bg-red-500 active:scale-95 transition-all rounded-full text-white" hidden={user}>
                         Get started
                     </Link>
-                    <Link to='/app?state=login' className="hidden md:block px-6 py-2 border active:scale-95 hover:bg-slate-50 transition-all rounded-full text-red-700 hover:text-slate-900" hidden={user}>
+                    <Link to='/dashboard?state=login' className="hidden md:block px-6 py-2 border active:scale-95 hover:bg-slate-50 transition-all rounded-full text-red-700 hover:text-slate-900" hidden={user}>
                         Login
                     </Link>
-                    <Link to='/app' className='hidden md:block px-8 py-2 bg-red-500 hover:bg-red-700 active:scale-95 transition-all rounded-full text-white' hidden={!user}>
+                    <Link to='/dashboard' className='hidden md:block px-8 py-2 bg-red-500 hover:bg-red-700 active:scale-95 transition-all rounded-full text-white' hidden={!user}>
                         Dashboard
                     </Link>
                 </div>

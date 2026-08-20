@@ -130,7 +130,7 @@ const ResumeBuilder = () => {
   return (
     <div>
         <div className='max-w-7xl mx-auto px-4 py-6'>
-            <Link to={'/app'} className='inline-flex gap-2 items-center text-slate-500 hover:text-slate-700 transition-all'>
+            <Link to={'/dashboard'} className='inline-flex gap-2 items-center text-slate-500 hover:text-slate-700 transition-all'>
                 <ArrowLeftIcon className='size-4'/> Back to Dashboard
             </Link>
         </div>

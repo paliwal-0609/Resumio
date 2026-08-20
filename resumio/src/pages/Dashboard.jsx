@@ -47,7 +47,7 @@ const Dashboard = () => {
             setAllResumes([...allResumes, data.resume]);
             setTitle('');
             setShowCreateResume(false);
-            navigate(`/app/builder/${data.resume._id}`);
+            navigate(`/dashboard/builder/${data.resume._id}`);
 
         } catch (error) {
             toast.error(error?.response?.data?.message || error.message)   
@@ -68,7 +68,7 @@ const Dashboard = () => {
             setTitle('');
             setResume(null);
             setShowUploadResume(false);
-            navigate(`/app/builder/${data.resumeId}`);
+            navigate(`/dashboard/builder/${data.resumeId}`);
 
         } catch (error) {
             toast.error(error?.response?.data?.message || error.message)
